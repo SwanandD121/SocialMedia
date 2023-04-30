@@ -3,6 +3,9 @@ import Cover from '../../img/cover-img.jpg'
 import Profile from '../../img/profile-img.jpg'
 
 const ProfileCard = () => {
+
+  const ProfilePage = true;
+
   return (
     <div className="ProfileCard rounded-3xl flex flex-col relative overflow-x-clip bg-white/70">
         <div className="ProfileImages flex flex-col relative justify-center items-center ">
@@ -32,15 +35,29 @@ const ProfileCard = () => {
                 <span className='text-gray-500 text-sm'>Following</span>
               </div>
 
+              {ProfilePage && (
+                <>
+                
+                <div className="vl h-20 border-l-4 border-[#cfcdcd] m-1 rounded-sm"></div>
+
+                <div className="follow flex flex-col items-center gap-1">
+                <span className='font-bold'>80</span>
+                <span className='text-gray-500 text-sm'>Posts</span>
+              </div>
+
+                </>
+              )}
+
             </div>
 
             <hr className='w-4/5 border-2 border-[#cfcdcd] m-1 rounded-sm '/>
 
         </div>
-
-        <span className=' font-bold cursor-pointer hover:underline m-4 text-orange-500 self-center'>
+              
+        {ProfilePage? '': <span className=' font-bold cursor-pointer hover:underline m-4 text-orange-500 self-center'>
           Visit Profile
-        </span>
+        </span>}
+        
     </div>
   )
 }
