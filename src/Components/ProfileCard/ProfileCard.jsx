@@ -7,10 +7,10 @@ const ProfileCard = () => {
   const ProfilePage = true;
 
   return (
-    <div className="ProfileCard rounded-3xl flex flex-col relative overflow-x-clip bg-white/70">
+    <div className="ProfileCard rounded-3xl flex flex-col relative overflow-x-clip bg-white/70 pb-2">
         <div className="ProfileImages flex flex-col relative justify-center items-center ">
             <img src={Cover} alt="" className='w-full'/>
-            <img src={Profile} alt="" className="w-24 absolute rounded-full border-2 border-gray shadow-md shadow-[0px_4px_17px_2px_rgba(0, 0, 0, 0.25)] bottom-[-3rem]" />
+            <img src={Profile} alt="" className="w-24 absolute rounded-full border-2 border-[#1060d7] shadow-md shadow-[0px_4px_17px_2px_rgba(0, 0, 0, 0.25)] bottom-[-3rem]" />
         </div>
 
         <div className="ProfileName flex flex-col mt-12 mb-1 items-center gap-1">

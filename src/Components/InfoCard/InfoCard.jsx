@@ -49,7 +49,7 @@ const InfoCard = () => {
             <hr />
         </div>
 
-        <button className=' text-white bg-orange-500 shadow-md p-1.5 mt-2 rounded-lg border-2 hover:border-orange-500 hover:bg-inherit hover:text-orange-500 hover:cursor-pointer'>
+        <button className='text-white bg-gradient-to-r from-[#2eaafa] to-[#1060d7] p-2 rounded-lg shadow-md border-2 hover:border-[#2eaafa] hover:bg-gradient-to-l hover:from-white hover:to-white hover:text-[#297eff] hover:cursor-pointer'>
             Logout
         </button>
     </div>
@@ -57,3 +57,6 @@ const InfoCard = () => {
 }
 
 export default InfoCard
+
+// text-white bg-gradient-to-r from-[#2eaafa] to-[#1060d7] p-2 rounded-lg shadow-md border-2 hover:border-[#2eaafa] hover:bg-gradient-to-l hover:from-white hover:to-white hover:text-[#297eff] hover:cursor-pointer 
+// className='text-white bg-gradient-to-r from-[#2eaafa] to-[#8c04db] p-2 rounded-lg shadow-md border-2 hover:border-orange-500 hover:bg-gradient-to-l hover:from-white hover:to-white hover:text-orange-500 hover:cursor-pointer'

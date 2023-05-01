@@ -24,7 +24,7 @@ const PostShare = () => {
 
   return (
     <div className="postShare flex justify-between items-cente rounded-3xl p-4 gap-4 bg-white/70">
-        <img src={profileimg} alt="" className='rounded-full w-12 h-12' />
+        <img src={profileimg} alt="" className='rounded-full w-12 h-12 border-2 border-[#1060d7] shadow-md' />
 
         <div className='w-full flex flex-col items-center gap-4'>
             <input type="text" placeholder="What's Happening..." className='w-full h-10 mt-1 bg-gray-200/50 border-2 rounded-lg outline-none p-2' />
@@ -46,7 +46,7 @@ const PostShare = () => {
                     <UilSchedule className=""/>Schedule
                 </div>
 
-                <button className=' text-white  bg-orange-500 shadow-md p-2 rounded-lg border-2 hover:border-orange-500 hover:bg-inherit hover:text-orange-500 hover:cursor-pointer'>
+                <button className='text-white bg-gradient-to-r from-[#2eaafa] to-[#1060d7] p-2 rounded-lg shadow-md border-2 hover:border-[#2eaafa] hover:bg-gradient-to-l hover:from-white hover:to-white hover:text-[#297eff] hover:cursor-pointer'>
                     Share
                 </button>
 

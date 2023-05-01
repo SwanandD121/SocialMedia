@@ -1,8 +1,8 @@
 import React from 'react'
 import Comment from '../../img/comment.png'
 import Share from '../../img/share.png'
-import Heart from '../../img/like.png'
-import NotLike from '../../img/notlike.png'
+import Heart from '../../img/heart-filled.png'
+import NotLike from '../../img/heart.png'
 
 const Post = ({data}) => {
   return (
@@ -17,9 +17,9 @@ const Post = ({data}) => {
 
 
         <div className="postReact flex gap-4 hover:cursor-pointer ml-2 ">
-            <img src={data.liked?Heart: NotLike} alt="" />
-            <img src={Comment} alt="" />
-            <img src={Share} alt="" />
+            <img src={data.liked?Heart: NotLike} alt="" className='w-8 h-8'/>
+            <img src={Comment} alt="" className='w-8 h-8' />
+            <img src={Share} alt="" className='w-8 h-8'/>
         </div>
 
         <span className="ml-2 text-sm"><b>{data.likes}</b> Likes </span>

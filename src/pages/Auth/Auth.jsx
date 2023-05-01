@@ -6,15 +6,16 @@ const Auth = () => {
   return (
     <div className="Auth flex items-center justify-center h-screen gap-16 relative ">
         <div className="a-left flex gap-4 items-center justify-center">
-            <img src={Logo} alt="" className='h-14 w-14'/>
+            <img src={Logo} alt="" className='h-24 w-24'/>
             <div className="Webname flex flex-col gap-2 font-bold">
-                <h1 className='font-bold text-3xl  bg-[100%] bg-repeat bg-gradient-to-r from-[#f9a225]-to-[#f95f35]'>SD Media</h1>
+                <h1 className='font-bold text-3xl  bg-[100%] bg-repeat bg-gradient-to-r from-[#2eaafa]-to-[#1060d7]'>FeatherPerfect</h1>
                 <h6>IPF is our Brand Ambassador!</h6>
+                <h6 className='text-xs font-extralight'>(Beacuse it has Perfect Feathers!)</h6>
             </div>
         </div>
 
-        {/* <SignUp/> */}
-        <LogIn/>
+        <SignUp/>
+        {/* <LogIn/> */}
     </div>
   )
 }
@@ -49,7 +50,7 @@ function SignUp(){
                     <span className='font-bold hover:underline hover:cursor-pointer'>Login</span>
                 </div>
 
-                <button type='submit' className='text-white bg-gradient-to-r from-[#f9a225] to-[#f95f35] p-2 rounded-lg shadow-md border-2 hover:border-orange-500 hover:bg-gradient-to-l hover:from-white hover:to-white hover:text-orange-500 hover:cursor-pointer'>
+                <button type='submit' className='text-white bg-gradient-to-r from-[#2eaafa] to-[#1060d7] p-2 rounded-lg shadow-md border-2 hover:border-[#2eaafa] hover:bg-gradient-to-l hover:from-white hover:to-white hover:text-[#297eff] hover:cursor-pointer'>
                     SignUp
                 </button>
             </div>
@@ -80,7 +81,7 @@ function LogIn(){
                         <span className='font-bold hover:underline hover:cursor-pointer'>SignUp</span>
                     </div>
 
-                    <button type='submit' className='text-white bg-gradient-to-r from-[#f9a225] to-[#f95f35] p-2 rounded-lg shadow-md border-2 hover:border-orange-500 hover:bg-gradient-to-l hover:from-white hover:to-white hover:text-orange-500 hover:cursor-pointer'>
+                    <button type='submit' className='text-white bg-gradient-to-r from-[#2eaafa] to-[#1060d7] p-2 rounded-lg shadow-md border-2 hover:border-[#2eaafa] hover:bg-gradient-to-l hover:from-white hover:to-white hover:text-[#297eff] hover:cursor-pointer'>
                         Login
                     </button>
                 </div>

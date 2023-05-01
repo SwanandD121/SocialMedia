@@ -3,7 +3,7 @@
     background-color: red;
   
     /* Create the gradient. */
-    background-image: var(--buttonBg);
+    background-image: linear-gradient(98.63deg, #2eaafa 0%, #1060d7 100%);
     
     /* Set the background size and repeat properties. */
     background-size: 100%;
