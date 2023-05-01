@@ -22,7 +22,7 @@ const Post = ({data}) => {
             <img src={Share} alt="" />
         </div>
 
-        <span className="ml-2"><b>{data.likes}</b> Likes </span>
+        <span className="ml-2 text-sm"><b>{data.likes}</b> Likes </span>
 
     </div>
   )
