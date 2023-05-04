@@ -57,7 +57,7 @@ const RightSide = () => {
 
             {/* Dark mode Toggle Button */}
 
-            <label class="switch" onClick={handleThemeSwitch} checked={theme === "dark"}>
+            <label class="switch" onChange={handleThemeSwitch}>
               <input type="checkbox"/>
               <span class="slider"></span>
             </label>
