@@ -15,14 +15,14 @@ const Auth = () => {
         </div>
 
         <SignUp/>
-        {/* <LogIn/> */}
+        <LogIn/>
     </div>
   )
 }
 
 function SignUp(){
     return (
-        <div className="a-right flex flex-col bg-white/70 dark:bg-slate-800 rounded-2xl p-4 gap-4">
+        <div className="a-right flex flex-col bg-white/70 dark:bg-slate-800 rounded-2xl p-4 gap-4 shadow-lg">
             <div className="infoForm flex flex-col gap-4 items-center">
 
                 <h3 className='font-bold text-lg dark:text-white'>SignUp</h3>
@@ -61,7 +61,7 @@ function SignUp(){
 
 function LogIn(){
     return (
-        <div className="a-right flex flex-col bg-white/70 dark:bg-slate-800 rounded-2xl p-4 w-96 gap-4">
+        <div className="a-right flex flex-col bg-white/70 dark:bg-slate-800 rounded-2xl p-4 w-96 gap-4 shadow-lg">
             <div className="infoForm flex flex-col gap-4 items-center">
 
                 <h3 className='font-bold text-lg dark:text-white'>Login</h3>

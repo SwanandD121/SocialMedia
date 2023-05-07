@@ -4,7 +4,7 @@ import { Followers } from '../../Data/FollowersData'
 const FollowersCard = () => {
   return (
     <div className="FollowersCard w-full p-5  rounded-3xl  flex flex-col gap-2 text-xs bg-white/70 dark:bg-slate-800">
-        <h3 className='self-center font-bold text-base mb-2'>Your Followers</h3>
+        <h3 className='self-center font-bold text-base mb-2 dark:text-white'>Your Followers</h3>
 
         {Followers.map((follower, id) =>{
             return (
