@@ -8,7 +8,27 @@ import { useEffect, useState } from 'react'; //also useState is required, but th
 
 const Auth = () => {
 
-    // for dark mode
+
+
+  return (
+    <div className="Auth flex items-center justify-center h-screen gap-16 relative ">
+        <div className="a-left flex gap-4 items-center justify-center">
+            <img src={Logo} alt="" className='h-24 w-24'/>
+            <div className="Webname flex flex-col gap-2 font-bold">
+                <h1 className='font-bold text-3xl  bg-[100%] bg-repeat bg-gradient-to-r from-[#2eaafa]-to-[#1060d7]'>FeatherPerfect</h1>
+                <h6 className='dark:text-white pt-2'>IPF is our Brand Ambassador!</h6>
+                <h6 className='text-xs font-extralight dark:text-white/80'>(You guessed it right! It has Perfect Feathers!)</h6>
+            </div>
+        </div>
+
+        <SignUp/>
+        {/* <LogIn/> */}
+    </div>
+  )
+}
+
+function SignUp(){
+        // for dark mode
   const [theme, setTheme] = useState(null);
 
   useEffect(() => {
@@ -34,30 +54,21 @@ const Auth = () => {
   };
 
   // for dark mode
-
-  return (
-    <div className="Auth flex items-center justify-center h-screen gap-16 relative ">
-        <div className="a-left flex gap-4 items-center justify-center">
-            <img src={Logo} alt="" className='h-24 w-24'/>
-            <div className="Webname flex flex-col gap-2 font-bold">
-                <h1 className='font-bold text-3xl  bg-[100%] bg-repeat bg-gradient-to-r from-[#2eaafa]-to-[#1060d7]'>FeatherPerfect</h1>
-                <h6 className='dark:text-white pt-2'>IPF is our Brand Ambassador!</h6>
-                <h6 className='text-xs font-extralight dark:text-white/80'>(You guessed it right! It has Perfect Feathers!)</h6>
-            </div>
-        </div>
-
-        {/* <SignUp/> */}
-        <LogIn/>
-    </div>
-  )
-}
-
-function SignUp(){
     return (
         <div className="a-right flex flex-col bg-white/70 dark:bg-slate-800 rounded-2xl p-4 gap-4 shadow-lg">
             <div className="infoForm flex flex-col gap-4 items-center">
 
+                <div className='flex'>
                 <h3 className='font-bold text-lg dark:text-white'>SignUp</h3>
+                
+
+                {/* Dark mode Toggle Button */}
+                <div  className=''>
+                    <button type='button' className='text-white' onClick={handleThemeSwitch}>Dark</button>
+                </div>
+                {/* Dark mode Toggle Button */}
+
+                </div>
 
                 <div className='flex gap-2 '>
                     <input type="text" placeholder='First Name' name='firstname' className='infoInput bg-gray-200 dark:bg-slate-700 dark:text-white p-2 rounded-lg outline-none'/>
