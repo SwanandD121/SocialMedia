@@ -11,11 +11,11 @@ function App() {
         <div className="blur-3xl absolute bg-blue-200 dark:bg-blue-800/30 w-64 h-56 rounded-full" style={{top: '36%', left: '-8rem'}}></div>
         <div className="blur-3xl absolute bg-blue-200 dark:bg-blue-800/30 w-64 h-56 rounded-full" style={{top: '85%', right: '21rem'}}></div>
 
-        <Home/>
+        {/* <Home/> */}
 
         {/* <Profile/> */}
 
-        {/* <Auth/> */}
+        <Auth/>
 
     </div>
   );

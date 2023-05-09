@@ -2,7 +2,39 @@ import React from 'react'
 import Logo from '../../img/logo.png'
 import './Auth.css'
 
+// for dark mode
+import { useEffect, useState } from 'react'; //also useState is required, but thats already imported above
+// for dark mode
+
 const Auth = () => {
+
+    // for dark mode
+  const [theme, setTheme] = useState(null);
+
+  useEffect(() => {
+    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+
+  }, [])
+
+  useEffect(() =>{
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+  }, [theme])
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark"? "light" : "dark");
+  };
+
+  // for dark mode
+
   return (
     <div className="Auth flex items-center justify-center h-screen gap-16 relative ">
         <div className="a-left flex gap-4 items-center justify-center">
@@ -14,7 +46,7 @@ const Auth = () => {
             </div>
         </div>
 
-        <SignUp/>
+        {/* <SignUp/> */}
         <LogIn/>
     </div>
   )
