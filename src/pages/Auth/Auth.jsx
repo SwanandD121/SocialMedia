@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../../img/logo.png'
 import './Auth.css'
+import { Link } from 'react-router-dom';
 
 // for dark mode
 import { useEffect, useState } from 'react'; //also useState is required, but thats already imported above

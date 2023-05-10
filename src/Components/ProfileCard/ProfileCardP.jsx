@@ -2,7 +2,7 @@ import React from 'react'
 import Cover from '../../img/cover-img.jpg'
 import Profile from '../../img/profile-img.jpg'
 
-const ProfileCard = () => {
+const ProfileCardP = () => {
 
   const ProfilePage = true;
 
@@ -54,12 +54,9 @@ const ProfileCard = () => {
 
         </div>
               
-        {ProfilePage? '': <span className=' font-bold cursor-pointer hover:underline m-4 text-orange-500 self-center'>
-          Visit Profile
-        </span>}
         
     </div>
   )
 }
 
-export default ProfileCard
+export default ProfileCardP

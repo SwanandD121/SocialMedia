@@ -5,6 +5,7 @@ import Setting from "../../img/setting-filled.png";
 import Dark from "../../img/dark-filled.png";
 import TrendCard from '../TrendCard/TrendCard';
 import ShareModal from '../ShareModal/ShareModal';
+import { Link } from 'react-router-dom';
 
 
 
@@ -48,7 +49,9 @@ const RightSide = () => {
   return (
     <div className="rightSide flex flex-col gap-6">
         <div className="navIcons flex h-8 items-center justify-around mt-5 hover:cursor-pointer">
-            <img src={Home} alt="" className='w-[2.5rem] h-[2.5rem]'/>
+
+            <Link to="/home"><img src={Home} alt="" className='w-[2.5rem] h-[2.5rem]'/> </Link>
+
             <img src={Noti} alt="" className='w-8 h-8'/>
             <img src={Setting} alt="" className='w-[2.2rem] h-[2.2rem]'/>
 

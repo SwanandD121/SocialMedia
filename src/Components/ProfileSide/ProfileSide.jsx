@@ -1,7 +1,7 @@
 import React from 'react'
 // import "./ProfileSide.css"
 import LogoSearch from '../LogoSearch/LogoSearch'
-import ProfileCard from '../ProfileCard/ProfileCard'
+import ProfileCard from '../ProfileCard/ProfileCardH'
 import FollowersCard from '../FollowersCard/FollowersCard'
 
 

@@ -1,9 +1,10 @@
 import React from 'react'
 import './Profile.css'
 import ProfileLeft from '../../Components/ProfileLeft/ProfileLeft'
-import ProfileCard from '../../Components/ProfileCard/ProfileCard'
+import ProfileCardP from '../../Components/ProfileCard/ProfileCardP'
 import PostSide from '../../Components/PostSide/PostSide'
 import RightSide from '../../Components/RightSide/RightSide'
+import { Link } from 'react-router-dom'
 
 const Profile = () => {
   return (
@@ -11,7 +12,7 @@ const Profile = () => {
         <ProfileLeft/>
 
         <div className="profileCenter flex flex-col gap-4">
-            <ProfileCard/>
+            <ProfileCardP/>
             <PostSide/>
         </div>
 
