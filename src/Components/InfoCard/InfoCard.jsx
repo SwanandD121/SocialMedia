@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { UilPen } from '@iconscout/react-unicons'
 import ProfileModal from '../ProfileModal/ProfileModal'
+import { Link } from 'react-router-dom'
 
 const InfoCard = () => {
 
@@ -49,9 +50,11 @@ const InfoCard = () => {
             <hr className='h-[0.1rem] border-none bg-gray-300 dark:bg-blue-700/20'/>
         </div>
 
-        <button className='text-white bg-gradient-to-r from-[#2eaafa] to-[#1060d7] p-2 m-2 rounded-lg shadow-md border-2  hover:border-2 dark:border-2 dark:border-black/90 dark:hover:border-[#2eaafa]   hover:border-[#2eaafa] hover:bg-gradient-to-l hover:from-transparent hover:to-transparent hover:text-[#297eff] hover:cursor-pointer'>
-            Logout
-        </button>
+        <Link to="/auth">
+            <button className='text-white bg-gradient-to-r from-[#2eaafa] to-[#1060d7] p-2 m-2 rounded-lg shadow-md border-2  hover:border-2 dark:border-2 dark:border-black/90 dark:hover:border-[#2eaafa]   hover:border-[#2eaafa] hover:bg-gradient-to-l hover:from-transparent hover:to-transparent hover:text-[#297eff] hover:cursor-pointer'>
+                Logout
+            </button>
+        </Link>
     </div>
   )
 }
