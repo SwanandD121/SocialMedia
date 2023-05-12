@@ -28,6 +28,10 @@ const Auth = () => {
   )
 }
 
+function handleSignup(){
+    <SignUp/>
+}
+
 function SignUp(){
         // for dark mode
   const [theme, setTheme] = useState(null);
@@ -122,7 +126,7 @@ function LogIn(){
 
                     <div className='flex text-sm items-center gap-2'>
                         <span className="dark:text-white">New to Wildlife?</span>
-                        <span className='font-bold hover:underline hover:cursor-pointer dark:text-white'>SignUp</span>
+                        <span className='font-bold hover:underline hover:cursor-pointer dark:text-white' onClick={handleSignup}>SignUp</span>
                     </div>
 
                     <Link to="/home">
