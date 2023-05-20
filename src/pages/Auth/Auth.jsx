@@ -22,8 +22,8 @@ const Auth = () => {
             </div>
         </div>
         
-        {/* <SignUp/> */}
-        <LogIn/>
+        <SignUp/>
+        {/* <LogIn/> */}
     </div>
   )
 }
@@ -63,13 +63,13 @@ function SignUp(){
         <div className="a-right flex flex-col bg-white/70 dark:bg-slate-800 rounded-2xl p-4 gap-4 shadow-lg">
             <div className="infoForm flex flex-col gap-4 items-center">
 
-                <div className='flex'>
+                <div className='flex gap-4 justify-between'>
                 <h3 className='font-bold text-lg dark:text-white'>SignUp</h3>
                 
 
                 {/* Dark mode Toggle Button */}
                 <div  className=''>
-                    <button type='button' className='text-white' onClick={handleThemeSwitch}>Dark</button>
+                    <button type='button' className='text-black font-bold dark:text-blue-700 rounded-sm border-2  p-1' onClick={handleThemeSwitch}>Dark</button>
                 </div>
                 {/* Dark mode Toggle Button */}
 
